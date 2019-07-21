@@ -3,7 +3,7 @@ package bank;
 import java.io.*;
 
 public class Filetxt {
-    public static String fileName = "C:/Users/N/IdeaProjects/ATM2019/Bankomat072019/a.txt";
+
     public static void write(String fileName, String text) {
         File file = new File(fileName);
         try {

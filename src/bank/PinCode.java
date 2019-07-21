@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class PinCode {
 
-    public static String fileName = "C:/Users/N/IdeaProjects/ATM2019/Bankomat072019/a.txt";
+    public static String fileName = "./a.txt";
 
     static void askNumberOfCard() {
 
@@ -19,7 +19,7 @@ public class PinCode {
             Matcher m = p.matcher(cardNumber);
             if (m.find()) {
                 System.out.println("Success");
-                String text = cardNumber.replaceAll("-", " ");
+                String text = cardNumber; //.replaceAll("-", " ");
                 Filetxt file = new Filetxt();
                 file.write(fileName, text);
                 cardNumberFlag = true;

@@ -4,12 +4,9 @@ import java.util.Scanner;
 
 public class OperationsWithMoney {
 
-
     private static int value1 = 5000;
-    private static int value = 0;
     private static int allCardMoney = 0;
     private static int moneyInBancomat = 50000;
-
 
     public void checkMoney() {
         System.out.println("Your cardBalance is: " + value1 + " Dollars");
